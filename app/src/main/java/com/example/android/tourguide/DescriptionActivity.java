@@ -43,6 +43,8 @@ public class DescriptionActivity extends AppCompatActivity {
         ((ScrollView) findViewById(R.id.description_id)).setBackgroundColor(getResources().getColor(clickedItem.getBackgroundColor()));
         } else {
             Toast.makeText(this,"Unable to retreive selected category", Toast.LENGTH_SHORT).show();
+
+            throw new NullPointerException("Categries is null");
         }
     }
 
