@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Tour Guide</string>
+
+    <!-- Category name for phrases [CHAR LIMIT=20] -->
+    <string name="category_attractions">Attractions</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
+    <string name="category_places">Places</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
+    <string name="category_food">Food</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
+    <string name="category_sports">Sports</string>
+
+    <string name="welcome">Welcome to Lahore \n A City of Gardens</string>
+
+    <!-- strings contains attractions -->
+    <string name="sozo_description">Sozo Water Park is a water park located in Lahore, Punjab, Pakistan. It is one of the few water-themed amusement parks in the city. You will love it.It is a point of interest. There are three pools in this park.</string>
+    <string name="lahore_zoo_safari">The Woodland Wildlife Park was established in 1982 over 242 acres as a government funded public facility. In 1998, it was handed over to the Punjab Wildlife and Parks Department by the Forest Department. </string>
+    <string name="lahore_museum">The Lahore Museum, was originally established in 1865-66 on the site of the hall or building of the 1864 Punjab Exhibition and later shifted to its present site located on The Mall, Lahore, Punjab, Pakistan in 1894.</string>
+    <string name="bagh_e_jinnah">Bagh-e-Jinnah is a historical park in the city of Lahore, Pakistan. It was formerly known as Lawrence Gardens. Today, the large green space contains a botanical garden, Masjid Dar-ul-Islam, and Quaid-e-Azam Library situated in a Victorian building.</string>
+    <string name="gulshan_e_iqbal">The Gulshan-e-Iqbal Park is a large park and recreational space in Lahore, Pakistan. With an area of over 67 acres, the park is one of the largest in the city. It is situated in the suburban locality of Allama Iqbal Town.</string>
+    <string name="jilani_park">Jilani Park is located in the city of Lahore, Punjab, Pakistan. It is on the Jail Road in front of the Services Hospital. It is famous for its floral exhibitions and artificial waterfall. Annual horse racing competitions are held in this park.</string>
+    <string name="joyland">Joyland is an amusement park in Lahore, Punjab, Pakistan. The park, adjacent to Fortress Stadium, was established in 1977 and is one of the largest recreation parks in the city. It is spread out over an area of 6 acres.</string>
+    <string name="unicorn_gallery">Unicorn Gallery is an art gallery in Karachi, Sindh, Pakistan. Unicorn Gallery was set up in 2004. Unicorn Gallery was inaugurated by the Governor of the State Bank, Dr Ishrat Husain.</string>
+    <string name="sindbad">Operating in Lahore since 1991, under the umbrella of the Dolmen Group, Sindbad’s Wonderland is a household name and a pioneer in the family entertainment industry of Pakistan. Having served two generations of Pakistani children, Sindbad attributes its success to maintaining high standards and constant innovation throughout the years.</string>
+    <string name="shakir_ali_museum">Shakir Ali Museum or Official Birthplace of Artist Shakir Ali was a family home museum in Lahore, Punjab, Pakistan. The museum was inaugurated after the death of famous artist and painter Shakir Ali\'s death.</string>
+
+    <!-- Strings contains places -->
+    <string name="shalimar_gardens">The Shalimar Gardens, sometimes spelled Shalamar Gardens, is a Mughal garden complex located in Lahore, capital of the Pakistani province of Punjab.</string>
+    <string name="badshahi_mosque">The Badshahi Mosque is a Mughal era mosque in Lahore, capital of the Pakistani province of Punjab. The mosque is located west of Lahore Fort along the outskirts of the Walled City of Lahore.</string>
+    <string name="lahore_fort">The Lahore Fort, is a citadel in the city of Lahore, Pakistan. The fortress is located at the northern end of Lahore\'s Walled City, and spreads over an area greater than 20 hectares</string>
+    <string name="wazir_khan_mosque">The Wazir Khan Mosque is a Mughal era mosque in the city of Lahore, capital of the Pakistani province of Punjab.</string>
+    <string name="minar_e_pakistan">Minar-e-Pakistan is a public monument located in Iqbal Park which is one of the largest urban parks in Lahore, Punjab, Pakistan.</string>
+    <string name="sheesh_mahal">The Sheesh Mahal is located within the Shah Burj block in northern-western corner of Lahore Fort. It was constructed under the reign of Mughal Emperor Shah Jahan in 1631-32</string>
+    <string name="moti_masjid">Moti Masjid, one of the "Pearl Mosques", is a 17th-century religious building located inside the Lahore Fort. It is a small, white marble structure built by Mughal emperor Shah Jahan, and is among his prominent extensions to the Lahore Fort Complex.</string>
+    <string name="jalo_park">Jallo Park, established in 1978, is a public recreation and wildlife site located in Lahore District, Punjab, Pakistan.</string>
+    <string name="hiran_minar">Hiran Minar is set in peaceful environs near Lahore in a town called Sheikhupura, Pakistan. It was constructed by the Mughal Emperor Jahangir as a monument to Mansiraj, his favourite pet deer or antelope</string>
+    <string name="data_darbar_complex">Data Darbar, located in the city of Lahore, Punjab, Pakistan is one of the oldest Muslim shrines in South Asia. It houses the remains of a Sufi saint, Abul Hassan Ali Hajvery. He is said to have lived on the site in the 11th century.</string>
+    <string name="delhi_gate">The Delhi Gate is one of the six remaining gates which were the traditional entry points into the Walled City of Lahore in Lahore, Pakistan. Delhi Gate and the adjacent Shahi Hammam were restored in 2015 by the Aga Khan Cultural Service Pakistan.</string>
+    <string name="mochi_gate">The Mochi Gate locally known as Mochi Darwaza is located within the Walled City of Lahore in Lahore, Punjab, Pakistan. Mochi Gate is a historical gate built by the Mughals.</string>
+    <string name="hazzuri_bagh">Hazuri Bagh is a garden in Lahore, Punjab, Pakistan, bounded by the Lahore Fort, Badshahi Mosque, the Samadhi of Ranjit Singh and the Roshnai Gate. In the center stands the Hazuri Bagh Baradari, built by Ranjit Singh.</string>
+
+
+
+</resources>
