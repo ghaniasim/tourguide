@@ -35,16 +35,21 @@ public class DescriptionActivity extends AppCompatActivity {
         } else if ( getIntent().hasExtra("places_position")){
             int places_position = getIntent().getIntExtra("places_position", 0);
             clickedItem = PlacesActivity.categories.get(places_position);
+        } else if ( getIntent().hasExtra("food_position")){
+            int food_position = getIntent().getIntExtra("food_position", 0);
+            clickedItem = FoodActivity.categories.get(food_position);
+        } else if ( getIntent().hasExtra("sports_position")){
+            int sports_position = getIntent().getIntExtra("sports_position", 0);
+            clickedItem = SportsActivity.categories.get(sports_position);
         }
+
         if( clickedItem != null){
         ((TextView) findViewById(R.id.title)).setText(clickedItem.getCategory());
         ((TextView) findViewById(R.id.description)).setText(getString(clickedItem.getDescription()));
         ((ImageView) findViewById(R.id.description_image)).setImageResource(clickedItem.getImage());
         ((ScrollView) findViewById(R.id.description_id)).setBackgroundColor(getResources().getColor(clickedItem.getBackgroundColor()));
         } else {
-            Toast.makeText(this,"Unable to retreive selected category", Toast.LENGTH_SHORT).show();
-
-            throw new NullPointerException("Categries is null");
+            Toast.makeText(this,"Unable to retrieve selected category", Toast.LENGTH_SHORT).show();
         }
     }
 

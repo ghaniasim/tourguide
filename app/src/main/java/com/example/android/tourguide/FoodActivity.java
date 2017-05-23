@@ -1,12 +1,18 @@
 package com.example.android.tourguide;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class FoodActivity extends AppCompatActivity {
+
+    public static ArrayList<Category> categories = new ArrayList<Category>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,20 +20,20 @@ public class FoodActivity extends AppCompatActivity {
         setContentView(R.layout.category_list);
 
         // Create a list of categories
-        final ArrayList<Category> categories = new ArrayList<Category>();
-        categories.add(new Category("Fiqay Ki Lassi"));
-        categories.add(new Category("Nasir kai Paaye"));
-        categories.add(new Category("Bhaiya kai Kebab"));
-        categories.add(new Category("Bashir Darul Mahi"));
-        categories.add(new Category("Taj Puri Wala"));
-        categories.add(new Category("Amritsari Hareesa"));
-        categories.add(new Category("Riaz Falooda"));
-        categories.add(new Category("Nisbat Road Kai Gol Gappay"));
-        categories.add(new Category("Butt ki karhai"));
-        categories.add(new Category("Nishat Takatak"));
-        categories.add(new Category("Nafees Dahi Bhalay"));
-        categories.add(new Category("Waris Nihari"));
-        categories.add(new Category("Benazir Kulfa"));
+
+        categories.add(new Category("Fiqay Ki Lassi", R.drawable.fiqay_ki_lassi, R.string.fiqay_ki_lassi, R.color.category_food));
+        categories.add(new Category("Nasir kai Paaye", R.drawable.nasir_k_paaye, R.string.nasir_k_paaye, R.color.category_food));
+        categories.add(new Category("Bhaiya kai Kebab", R.drawable.bhaiya_k_kebab, R.string.bhaiya_k_kebab, R.color.category_food));
+        categories.add(new Category("Bashir Darul Mahi", R.drawable.bashir_darul_mahi, R.string.bashir_darul_mahi, R.color.category_food));
+        categories.add(new Category("Taj Puri Wala", R.drawable.taj_puri_wala, R.string.taj_puri_wala, R.color.category_food));
+        categories.add(new Category("Amritsari Hareesa", R.drawable.amritsari_hareesa, R.string.amritsari_hareesa, R.color.category_food));
+        categories.add(new Category("Riaz Falooda", R.drawable.riaz_falooda, R.string.riaz_falooda, R.color.category_food));
+        categories.add(new Category("Nisbat Road Kai Gol Gappay", R.drawable.nisbat_road, R.string.nisbat_road, R.color.category_food));
+        categories.add(new Category("Butt ki karhai", R.drawable.butt_ki_karahi, R.string.butt_ki_karashi, R.color.category_food));
+        categories.add(new Category("Nishat Takatak", R.drawable.nishat_takatak, R.string.nisbat_road, R.color.category_food));
+        categories.add(new Category("Nafees Dahi Bhalay", R.drawable.bhallay, R.string.nafees_bhalay, R.color.category_food));
+        categories.add(new Category("Waris Nihari", R.drawable.waris_nihari, R.string.waris_nihari, R.color.category_food));
+        categories.add(new Category("Benazir Kulfa", R.drawable.kulfa, R.string.benazir_kulfa, R.color.category_food));
 
         // Create an {@link CategoryAdaptor}, whose data source is a list of {@link Category}s. The
         // adapter knows how to create list items for each item in the list.
@@ -41,5 +47,14 @@ public class FoodActivity extends AppCompatActivity {
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adaptor);
+
+        // Set onClickListener to each list item.
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                Intent myIntent = new Intent(FoodActivity.this, DescriptionActivity.class);
+                myIntent.putExtra("food_position", position);
+                startActivity(myIntent);
+            }});
     }
 }

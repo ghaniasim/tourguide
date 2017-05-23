@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,14 +18,24 @@
         </activity>
         <activity
             android:name=".ContentActivity"
+            android:label="Contents"
             android:screenOrientation="portrait"
             />
         <activity android:name=".AttractionsActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".PlacesActivity" />
-        <activity android:name=".FoodActivity" />
-        <activity android:name=".SportsActivity" />
-        <activity android:name=".DescriptionActivity">
+            android:label="List of Attractions"
+            android:parentActivityName=".ContentActivity"/>
+        <activity android:name=".PlacesActivity"
+            android:label="List of Places"
+            android:parentActivityName=".ContentActivity"/>
+        <activity android:name=".FoodActivity"
+            android:label="List of Food"
+            android:parentActivityName=".ContentActivity"/>
+        <activity android:name=".SportsActivity"
+            android:label="List of Sports"
+            android:parentActivityName=".ContentActivity"/>
+        <activity android:name=".DescriptionActivity"
+            android:label="Description"
+            android:parentActivityName=".ContentActivity">
         </activity>
     </application>
 
