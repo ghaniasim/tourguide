@@ -29,7 +29,7 @@ public class DescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.description_view);
         Category clickedItem = null;
-        if (getIntent().hasExtra("attractions_positions")) {
+        if (getIntent().hasExtra("attractions_positions") && 1==1 ) {
             int attractions_position = getIntent().getIntExtra("attractions_position", 0);
             clickedItem = AttractionsActivity.categories.get(attractions_position);
         } else if (getIntent().hasExtra("places_position")) {
