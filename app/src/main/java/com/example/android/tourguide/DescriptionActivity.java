@@ -1,26 +1,11 @@
 package com.example.android.tourguide;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-
-import static android.R.attr.category;
-import static android.R.id.message;
-import static android.R.id.text1;
-import static android.R.id.title;
-import static android.support.v7.widget.AppCompatDrawableManager.get;
-import static com.example.android.tourguide.AttractionsActivity.categories;
-import static junit.runner.Version.id;
 
 public class DescriptionActivity extends AppCompatActivity {
 
@@ -29,7 +14,7 @@ public class DescriptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.description_view);
         Category clickedItem = null;
-        if (getIntent().hasExtra("attractions_positions")) {
+        if (getIntent().hasExtra("attractions_position")) {
             int attractions_position = getIntent().getIntExtra("attractions_position", 0);
             clickedItem = AttractionsActivity.categories.get(attractions_position);
         } else if (getIntent().hasExtra("places_position")) {
