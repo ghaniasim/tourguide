@@ -21,19 +21,19 @@ public class PlacesActivity extends AppCompatActivity {
         setContentView(R.layout.category_list);
 
         // Create a list of categories
-        categories.add(new Category("Shalimar Gardens, Lahore", R.drawable.shalimar_gardens, R.string.shalimar_gardens, R.color.category_places));
-        categories.add(new Category("Badshahi Mosque", R.drawable.badshahi_mosque, R.string.badshahi_mosque, R.color.category_places));
-        categories.add(new Category("Lahore Fort", R.drawable.lahore_fort,R.string.lahore_fort, R.color.category_places));
-        categories.add(new Category("Wazir Khan Mosque", R.drawable.wazir_khan_mosque, R.string.wazir_khan_mosque, R.color.category_places));
-        categories.add(new Category("Minar-e-Pakistan", R.drawable.minar_e_pakistan, R.string.minar_e_pakistan, R.color.category_places));
-        categories.add(new Category("Sheesh Mahal", R.drawable.sheesh_mahal, R.string.sheesh_mahal, R.color.category_places));
-        categories.add(new Category("Moti Masjid", R.drawable.moti_masjid, R.string.moti_masjid, R.color.category_places));
-        categories.add(new Category("Jallo Park", R.drawable.jallo_park, R.string.jalo_park, R.color.category_places));
-        categories.add(new Category("Hiran Minar", R.drawable.hiran_minar, R.string.hiran_minar, R.color.category_places));
-        categories.add(new Category("Data Durbar Complex", R.drawable.data_darbar_complex, R.string.data_darbar_complex, R.color.category_places));
-        categories.add(new Category("Delhi Gate", R.drawable.delhi_gate, R.string.delhi_gate, R.color.category_places));
-        categories.add(new Category("Mochi Gate", R.drawable.mochi_gate, R.string.mochi_gate, R.color.category_places));
-        categories.add(new Category("Hazuri Bagh", R.drawable.hazuri_bagh, R.string.hazzuri_bagh, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_shalimar), R.drawable.shalimar_gardens, R.string.shalimar_gardens, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_badshahi), R.drawable.badshahi_mosque, R.string.badshahi_mosque, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_fort), R.drawable.lahore_fort, R.string.lahore_fort, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_wazir), R.drawable.wazir_khan_mosque, R.string.wazir_khan_mosque, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_minar), R.drawable.minar_e_pakistan, R.string.minar_e_pakistan, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_sheesh), R.drawable.sheesh_mahal, R.string.sheesh_mahal, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_moti), R.drawable.moti_masjid, R.string.moti_masjid, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_jallo), R.drawable.jallo_park, R.string.jalo_park, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_hiran), R.drawable.hiran_minar, R.string.hiran_minar, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_darbar), R.drawable.data_darbar_complex, R.string.data_darbar_complex, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_delhi), R.drawable.delhi_gate, R.string.delhi_gate, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_mochi), R.drawable.mochi_gate, R.string.mochi_gate, R.color.category_places));
+        categories.add(new Category(getString(R.string.title_hazuri), R.drawable.hazuri_bagh, R.string.hazzuri_bagh, R.color.category_places));
 
         // Create an {@link CategoryAdaptor}, whose data source is a list of {@link Category}s. The
         // adapter knows how to create list items for each item in the list.
@@ -55,6 +55,7 @@ public class PlacesActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(PlacesActivity.this, DescriptionActivity.class);
                 myIntent.putExtra("places_position", position);
                 startActivity(myIntent);
-            }});
+            }
+        });
     }
 }

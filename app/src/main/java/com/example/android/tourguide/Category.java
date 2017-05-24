@@ -20,7 +20,9 @@ package com.example.android.tourguide;
  */
 public class Category {
 
-    /** list of category */
+    /**
+     * list of category
+     */
     private String mCategory;
     private int mImageId;
     private int mDescriptionId;
@@ -49,12 +51,16 @@ public class Category {
         return mCategory;
     }
 
-    public int getImage(){
+    public int getImage() {
         return mImageId;
     }
 
-    public int getBackgroundColor(){return mBackgroundColor; }
+    public int getBackgroundColor() {
+        return mBackgroundColor;
+    }
 
-    public int getDescription(){return mDescriptionId; }
+    public int getDescription() {
+        return mDescriptionId;
+    }
 
 }

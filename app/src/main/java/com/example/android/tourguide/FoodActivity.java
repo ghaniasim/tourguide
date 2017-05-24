@@ -21,19 +21,19 @@ public class FoodActivity extends AppCompatActivity {
 
         // Create a list of categories
 
-        categories.add(new Category("Fiqay Ki Lassi", R.drawable.fiqay_ki_lassi, R.string.fiqay_ki_lassi, R.color.category_food));
-        categories.add(new Category("Nasir kai Paaye", R.drawable.nasir_k_paaye, R.string.nasir_k_paaye, R.color.category_food));
-        categories.add(new Category("Bhaiya kai Kebab", R.drawable.bhaiya_k_kebab, R.string.bhaiya_k_kebab, R.color.category_food));
-        categories.add(new Category("Bashir Darul Mahi", R.drawable.bashir_darul_mahi, R.string.bashir_darul_mahi, R.color.category_food));
-        categories.add(new Category("Taj Puri Wala", R.drawable.taj_puri_wala, R.string.taj_puri_wala, R.color.category_food));
-        categories.add(new Category("Amritsari Hareesa", R.drawable.amritsari_hareesa, R.string.amritsari_hareesa, R.color.category_food));
-        categories.add(new Category("Riaz Falooda", R.drawable.riaz_falooda, R.string.riaz_falooda, R.color.category_food));
-        categories.add(new Category("Nisbat Road Kai Gol Gappay", R.drawable.nisbat_road, R.string.nisbat_road, R.color.category_food));
-        categories.add(new Category("Butt ki karhai", R.drawable.butt_ki_karahi, R.string.butt_ki_karashi, R.color.category_food));
-        categories.add(new Category("Nishat Takatak", R.drawable.nishat_takatak, R.string.nisbat_road, R.color.category_food));
-        categories.add(new Category("Nafees Dahi Bhalay", R.drawable.bhallay, R.string.nafees_bhalay, R.color.category_food));
-        categories.add(new Category("Waris Nihari", R.drawable.waris_nihari, R.string.waris_nihari, R.color.category_food));
-        categories.add(new Category("Benazir Kulfa", R.drawable.kulfa, R.string.benazir_kulfa, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_lassi), R.drawable.fiqay_ki_lassi, R.string.fiqay_ki_lassi, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_paaye), R.drawable.nasir_k_paaye, R.string.nasir_k_paaye, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_kebab), R.drawable.bhaiya_k_kebab, R.string.bhaiya_k_kebab, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_bashir), R.drawable.bashir_darul_mahi, R.string.bashir_darul_mahi, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_puri), R.drawable.taj_puri_wala, R.string.taj_puri_wala, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_hareesa), R.drawable.amritsari_hareesa, R.string.amritsari_hareesa, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_falooda), R.drawable.riaz_falooda, R.string.riaz_falooda, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_nisbat), R.drawable.nisbat_road, R.string.nisbat_road, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_karahi), R.drawable.butt_ki_karahi, R.string.butt_ki_karashi, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_nishat), R.drawable.nishat_takatak, R.string.nisbat_road, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_nafees), R.drawable.bhallay, R.string.nafees_bhalay, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_nihari), R.drawable.waris_nihari, R.string.waris_nihari, R.color.category_food));
+        categories.add(new Category(getString(R.string.title_kulfa), R.drawable.kulfa, R.string.benazir_kulfa, R.color.category_food));
 
         // Create an {@link CategoryAdaptor}, whose data source is a list of {@link Category}s. The
         // adapter knows how to create list items for each item in the list.
@@ -55,6 +55,7 @@ public class FoodActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(FoodActivity.this, DescriptionActivity.class);
                 myIntent.putExtra("food_position", position);
                 startActivity(myIntent);
-            }});
+            }
+        });
     }
 }

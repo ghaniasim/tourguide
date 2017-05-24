@@ -20,10 +20,10 @@ public class SportsActivity extends AppCompatActivity {
         setContentView(R.layout.category_list);
 
         // Create a list of categories
-        categories.add(new Category("Gaddafi Stadium", R.drawable.gaddafi_stadium, R.string.gaddafi_stadium, R.color.category_sports));
-        categories.add(new Category("National Hockey Stadium", R.drawable.national_stadium, R.string.national_stadium, R.color.category_sports));
-        categories.add(new Category("Aleem Dar Cricket Academy", R.drawable.aleem_dar, R.string.aleem_dar, R.color.category_sports));
-        categories.add(new Category("DHA Sports Complex", R.drawable.dha_sports_complex, R.string.DHA_sports_complex, R.color.category_sports));
+        categories.add(new Category(getString(R.string.title_gaddafi), R.drawable.gaddafi_stadium, R.string.gaddafi_stadium, R.color.category_sports));
+        categories.add(new Category(getString(R.string.title_hockey), R.drawable.national_stadium, R.string.national_stadium, R.color.category_sports));
+        categories.add(new Category(getString(R.string.title_academy), R.drawable.aleem_dar, R.string.aleem_dar, R.color.category_sports));
+        categories.add(new Category(getString(R.string.title_dha), R.drawable.dha_sports_complex, R.string.DHA_sports_complex, R.color.category_sports));
 
         // Create an {@link CategoryAdaptor}, whose data source is a list of {@link Category}s. The
         // adapter knows how to create list items for each item in the list.
@@ -45,6 +45,7 @@ public class SportsActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(SportsActivity.this, DescriptionActivity.class);
                 myIntent.putExtra("sports_position", position);
                 startActivity(myIntent);
-            }});
+            }
+        });
     }
 }

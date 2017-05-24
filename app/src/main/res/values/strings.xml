@@ -18,6 +18,16 @@
     <string name="welcome">Welcome to Lahore \n A City of Gardens</string>
 
     <!-- strings contains attractions -->
+    <string name="title_sozo">Sozo Water Park</string>
+    <string name="title_safari">Lahore Zoo Safari</string>
+    <string name="title_museum">Lahore Museum</string>
+    <string name="title_bagh">Bagh-e-Jinnah</string>
+    <string name="title_gulshan">Gulshan-e-Iqbal Park</string>
+    <string name="title_jilani">Jilani Park</string>
+    <string name="title_joyland">Joyland</string>
+    <string name="title_unicorn">Unicorn Gallery</string>
+    <string name="title_sindbad">Sindbad</string>
+    <string name="title_shakir">Shakir Ali Museum</string>
     <string name="sozo_description">Sozo Water Park is a water park located in Lahore, Punjab, Pakistan. It is one of the few water-themed amusement parks in the city. You will love it.It is a point of interest. There are three pools in this park.</string>
     <string name="lahore_zoo_safari">The Woodland Wildlife Park was established in 1982 over 242 acres as a government funded public facility. In 1998, it was handed over to the Punjab Wildlife and Parks Department by the Forest Department. </string>
     <string name="lahore_museum">The Lahore Museum, was originally established in 1865-66 on the site of the hall or building of the 1864 Punjab Exhibition and later shifted to its present site located on The Mall, Lahore, Punjab, Pakistan in 1894.</string>
@@ -30,6 +40,19 @@
     <string name="shakir_ali_museum">Shakir Ali Museum or Official Birthplace of Artist Shakir Ali was a family home museum in Lahore, Punjab, Pakistan. The museum was inaugurated after the death of famous artist and painter Shakir Ali\'s death.</string>
 
     <!-- Strings contains places -->
+    <string name="title_shalimar">Shalimar Gardens</string>
+    <string name="title_badshahi">Badshahi Mosque</string>
+    <string name="title_fort">Lahore Fort</string>
+    <string name="title_wazir">Wazir Khan Mosque</string>
+    <string name="title_minar">Minar-e-Pakistan</string>
+    <string name="title_sheesh">Sheesh Mahal</string>
+    <string name="title_moti">Moti Masjid</string>
+    <string name="title_jallo">Jallo Park</string>
+    <string name="title_hiran">Hiran Minar</string>
+    <string name="title_darbar">Data Durbar Complex</string>
+    <string name="title_delhi">Delhi Gate</string>
+    <string name="title_mochi">Mochi Gate</string>
+    <string name="title_hazuri">Hazuri Bagh</string>
     <string name="shalimar_gardens">The Shalimar Gardens, sometimes spelled Shalamar Gardens, is a Mughal garden complex located in Lahore, capital of the Pakistani province of Punjab.</string>
     <string name="badshahi_mosque">The Badshahi Mosque is a Mughal era mosque in Lahore, capital of the Pakistani province of Punjab. The mosque is located west of Lahore Fort along the outskirts of the Walled City of Lahore.</string>
     <string name="lahore_fort">The Lahore Fort, is a citadel in the city of Lahore, Pakistan. The fortress is located at the northern end of Lahore\'s Walled City, and spreads over an area greater than 20 hectares</string>
@@ -45,6 +68,20 @@
     <string name="hazzuri_bagh">Hazuri Bagh is a garden in Lahore, Punjab, Pakistan, bounded by the Lahore Fort, Badshahi Mosque, the Samadhi of Ranjit Singh and the Roshnai Gate. In the center stands the Hazuri Bagh Baradari, built by Ranjit Singh.</string>
 
     <!-- Strings contains food -->
+    <string name="title_lassi">Fiqay Ki Lassi</string>
+    <string name="title_paaye">Nasir kai Paaye</string>
+    <string name="title_kebab">Bhaiya kai Kebab</string>
+    <string name="title_bashir">Bashir Darul Mahi</string>
+    <string name="title_puri">Taj Puri Wala</string>
+    <string name="title_hareesa">Amritsari Hareesa</string>
+    <string name="title_falooda">Riaz Falooda</string>
+    <string name="title_nisbat">Nisbat Road Kai Gol Gappay</string>
+    <string name="title_karahi">Butt ki karhai</string>
+    <string name="title_nishat">Nishat Takatak</string>
+    <string name="title_nafees">Nafees Dahi Bhalay</string>
+    <string name="title_nihari">Waris Nihari</string>
+    <string name="title_kulfa">Benazir Kulfa</string>
+
     <string name="fiqay_ki_lassi">Fiqay ki lassi is claimed to be the best lassi there is to be offered in Lahore. Their classic peray wali lassi is so popular, that regardless of whatever time you go there you’d have to take a token and wait in a significantly long queue. Rest assured, it\’s totally worth the wait.</string>
     <string name="nasir_k_paaye">Who doesn\’t love some paaye (trotters for the angraiz qoum)? Nasir bhai makes the finest paaye you will find in Lahore. Though, they’re in a close competition with Phajay kai paaye but we recommend you try Nasir. Phaja is too mainstream.</string>
     <string name="bhaiya_k_kebab">If you crave for some spicy and tasty Lahori kebab, chances are you wouldn’t have to travel much further. Bhaiya is located in Model Town. Beware, like with everything else that gets famous, due to the success of the kebab place, you\’ll find many doppelgangers with the exact same name nearby.</string>
@@ -60,9 +97,15 @@
     <string name="benazir_kulfa">Who doesn’t like ice cream? And kulfa is the Pakistani version of ice cream. With those crunchy nuts giving it an edgy texture to compliment the sheer sweetness of the kulfa itself. And to get the best kulfa Lahore has to offer, head on down to main market and order some at Benazir Kulfa. While you\’re at it, you might want to give their equally decadent kheer a try too.</string>
 
     <!-- Strings contains sports -->
+    <string name="title_gaddafi">Gaddafi Stadium</string>
+    <string name="title_hockey">National Hockey Stadium</string>
+    <string name="title_academy">Aleem Dar Cricket Academy</string>
+    <string name="title_dha">DHA Sports Complex</string>
     <string name="gaddafi_stadium">Gaddafi Stadium is a cricket ground in Lahore, Pakistan. It was designed by famous architect and engineer Nasreddin Murat-Khan, and constructed by Mian Abdul Khaliq and Company in 1959.</string>
     <string name="national_stadium">National Hockey Stadium is a purpose-built field hockey stadium in Lahore, Pakistan. It is the biggest field hockey stadium in the world. The stadium has a capacity of 45,000 spectators.</string>
     <string name="aleem_dar">Aleem Dar Cricket Academy Near LDA Office, Behind Mian Plaza Johar Town، Lahore، Pakistan</string>
     <string name="DHA_sports_complex">In order to generate maximum sports activities establishment of the Sports Academy / Club are in the offing. This will help enhance the participation of residents in outdoor healthy activities and create sports culture especially in DHA. Training of young players will act as a nursery for their further grooming at national level and raise the standards of sports in DHA.</string>
-    
+    <string name="toast_message">Unable to retrieve selected category</string>
+
+
 </resources>

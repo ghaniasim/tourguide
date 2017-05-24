@@ -33,15 +33,17 @@ import java.util.ArrayList;
  * {@link CategoryAdaptor} is an {@link CategoryAdaptor} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Category} objects.
  */
-public class CategoryAdaptor extends ArrayAdapter<Category>  {
+public class CategoryAdaptor extends ArrayAdapter<Category> {
 
-    /** Resource ID for the background color for this list of words. */
+    /**
+     * Resource ID for the background color for this list of words.
+     */
     private int mColorResourceID;
 
     /**
      * Create a new {@link CategoryAdaptor} object.
      *
-     * @param context is the current context (i.e. Activity) that the adapter is being created in.
+     * @param context  is the current context (i.e. Activity) that the adapter is being created in.
      * @param category is the list of {@link Category}s to be displayed.
      */
     public CategoryAdaptor(Context context, ArrayList<Category> category, int colorResourceID) {
