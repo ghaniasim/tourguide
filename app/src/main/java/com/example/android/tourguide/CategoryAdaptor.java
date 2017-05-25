@@ -69,13 +69,27 @@ public class CategoryAdaptor extends ArrayAdapter<Category> {
         // the Category TextView.
         categoryView.setText(currentCategory.getCategory());
 
-
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
         // Find the color that resource ID maps
         int color = ContextCompat.getColor(getContext(), mColorResourceID);
         // Set the background color of the text container view
         textContainer.setBackgroundColor(color);
+
+        // Find the ImageView in the list_item.xml layout with the ID image.
+        ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+
+        if (currentCategory.hasImage()) {
+            // Set the image view to the image resource specified in the current word.
+            imageView.setImageResource(currentCategory.getImageResourceId());
+            // Find the color that resource ID maps
+            imageView.setBackgroundColor(color);
+
+            // Make sure the view is Visible
+            imageView.setVisibility(View.VISIBLE);
+        } else {
+            imageView.setVisibility(View.GONE);
+        }
 
         // Return the whole list item layout so that it can be shown in
         // the ListView.

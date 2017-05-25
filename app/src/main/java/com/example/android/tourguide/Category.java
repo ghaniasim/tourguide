@@ -24,9 +24,10 @@ public class Category {
      * list of category
      */
     private String mCategory;
-    private int mImageId;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
     private int mDescriptionId;
     private int mBackgroundColor;
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Create a new Category object.
@@ -37,9 +38,9 @@ public class Category {
         mCategory = category;
     }
 
-    public Category(String category, int imageId, int descriptionId, int color) {
+    public Category(String category, int imageResourceId, int descriptionId, int color) {
         mCategory = category;
-        mImageId = imageId;
+        mImageResourceId = imageResourceId;
         mDescriptionId = descriptionId;
         mBackgroundColor = color;
     }
@@ -51,8 +52,8 @@ public class Category {
         return mCategory;
     }
 
-    public int getImage() {
-        return mImageId;
+    public int getImageResourceId() {
+        return mImageResourceId;
     }
 
     public int getBackgroundColor() {
@@ -61,6 +62,13 @@ public class Category {
 
     public int getDescription() {
         return mDescriptionId;
+    }
+
+    /**
+     * Returns wether or not there is an image for the word.
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
 }

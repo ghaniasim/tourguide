@@ -1,26 +1,13 @@
 package com.example.android.tourguide;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.support.v4.content.ContextCompat;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-import static android.R.attr.category;
-import static android.R.id.message;
-import static android.R.id.text1;
-import static android.R.id.title;
-import static android.support.v7.widget.AppCompatDrawableManager.get;
-import static com.example.android.tourguide.AttractionsActivity.categories;
-import static junit.runner.Version.id;
 
 public class DescriptionActivity extends AppCompatActivity {
 
@@ -46,7 +33,7 @@ public class DescriptionActivity extends AppCompatActivity {
         if (clickedItem != null) {
             ((TextView) findViewById(R.id.title)).setText(clickedItem.getCategory());
             ((TextView) findViewById(R.id.description)).setText(getString(clickedItem.getDescription()));
-            ((ImageView) findViewById(R.id.description_image)).setImageResource(clickedItem.getImage());
+            ((ImageView) findViewById(R.id.description_image)).setImageResource(clickedItem.getImageResourceId());
             ((ScrollView) findViewById(R.id.description_id)).setBackgroundColor(getResources().getColor(clickedItem.getBackgroundColor()));
         } else {
             Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT).show();
